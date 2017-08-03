@@ -5,7 +5,7 @@ const path = require('path');
 
 function parseArguments() {
   let comicNumber = '';
-  let downloadDirectory = __dirname;
+  let downloadDirectory = process.cwd();
 
   if (process.argv[2] && !isNaN(process.argv[2])) {
     comicNumber = process.argv[2];

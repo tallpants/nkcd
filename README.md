@@ -2,6 +2,12 @@
 
 An xkcd downloader in pure Node.js, no packages involved.
 
+## Installation
+
+```shell
+$ npm install -g nkcd
+```
+
 ## Usage
 
 ```shell

@@ -1,11 +1,11 @@
 {
   "name": "nkcd",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "xkcd downloader",
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
-    "nkcd": "./index"
+    "nkcd": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
