@@ -17,7 +17,14 @@ function downloadImage(imageUrl, filePath) {
   http.get(imageUrl, response => response.pipe(file));
 }
 
-const xkcdJsonUrl = new url.URL('https://xkcd.com/info.0.json');
+let comicNumber = '';
+if (process.argv[2]) {
+  comicNumber = process.argv[2];
+}
+
+const xkcdJsonUrl = new url.URL(
+  `https://xkcd.com/${comicNumber + '/'}info.0.json`
+);
 
 http.get(xkcdJsonUrl, response => {
   let body = '';
