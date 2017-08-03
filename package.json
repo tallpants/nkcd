@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "xkcd downloader",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "nkcd": "./index"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
